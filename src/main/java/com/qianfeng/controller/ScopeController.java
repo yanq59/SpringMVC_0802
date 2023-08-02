@@ -82,7 +82,7 @@ public class ScopeController {
 //    每次发送请求 都自动的执行此方法 放在request中
 //    每次请求对应的处理器方法之前, 先执行该方法
     @ModelAttribute(value = "listUser")
-    public List<User> selectAllUser(){
+    public List<User> selectAllUser(HttpSession session){
         List<User> list = new ArrayList<>();
         User user1 = new User();
         user1.setUsername("test");
@@ -93,6 +93,9 @@ public class ScopeController {
         list.add(user1);
         list.add(user2);
         System.out.println("list = " + list);
+
+        session.setAttribute("user",user1);
+
         return list;
     }
 

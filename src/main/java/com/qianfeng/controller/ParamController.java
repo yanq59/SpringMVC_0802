@@ -41,6 +41,7 @@ public class ParamController {
 //   参数推荐用包装器类型, 获取不到 是 null 不报错, int没有的话就会报错
 //   url: http://localhost:8080/param/getParam3?uname=admin&age=23
 //   value = 可以省略
+//    @RequestParam()在request种获取值
 //   默认 required = true 如果 required = false 参数可以没有, ==> 默认值是 defaultValue = "aaa"
     @RequestMapping("/getParam3")
     public String getParam3(@RequestParam(value = "uname",required = false,defaultValue = "aaa") String username, Integer age){
