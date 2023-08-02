@@ -11,6 +11,6 @@
     <title>$Title$</title>
   </head>
   <body>
-  $END$
+  <marquee behavior="alternate" direction="right" ><font style="font-size: 50px; background-image:-webkit-linear-gradient(bottom,red,#fd8403,yellow); -webkit-background-clip:text; -webkit-text-fill-color:transparent;">tomcat 启动!</font></marquee>
   </body>
 </html>
