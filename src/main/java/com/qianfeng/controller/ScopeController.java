@@ -21,7 +21,7 @@ import java.util.List;
 public class ScopeController {
 //  ------------------------ request 对象的数据共享  ----------------------------
 
-    @RequestMapping("/test1")
+    @RequestMapping("test1")
     public String test1(HttpServletRequest request){
         request.setAttribute("msg","success");
         return "scope";
@@ -95,7 +95,6 @@ public class ScopeController {
         System.out.println("list = " + list);
 
         session.setAttribute("user",user1);
-
         return list;
     }
 
@@ -109,7 +108,9 @@ public class ScopeController {
     }
 
 //    --------------- SessionAttribute --------------
-//    //    表示该参数会从Model中获取值
+//       表示该参数会从Model中获取值
+//       @SessionAttribute(value = "username",required = false) ==> 从 session 中获取 username
+//    url: http://localhost:8080/scope/test9?username=eee&password=3333
     @RequestMapping("/test9")
     public String getParam9(@SessionAttribute(value = "username",required = false) @RequestParam("username") String username){
         System.out.println("username = " + username);

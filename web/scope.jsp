@@ -16,6 +16,7 @@ session: ${sessionScope.realName}<br><br>
 application: ${applicationScope.times}<br><br>
 
 userList: ${requestScope.listUser}<br><br>
+${sessionScope.user}
 user: ${requestScope.u}<br><br>
 </body>
 </html>
