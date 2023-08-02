@@ -11,10 +11,12 @@
 <!-- 开启IOC注解扫描 -->
     <context:component-scan base-package="com.qianfeng"></context:component-scan>
 
-<!-- 视图解析器 -->
+<!-- 视图解析器 ==> 把 ModelAndView 解析出来 -->
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!-- 前缀 -->
         <property name="prefix" value="/"></property>
+<!--   web-inf 下的 -->
+<!--        <property name="prefix" value="/WEB-INF/"></property>-->
         <!-- 后缀 -->
         <property name="suffix" value=".jsp"></property>
     </bean>

@@ -11,4 +11,11 @@ public class FirstController {
 //        返回值作为视图的名字
         return "login";
     }
+
+    @RequestMapping("/testjsp") // 请求的映射
+    public String test(){
+        System.out.println("WEB-INF");
+//        返回值作为视图的名字
+        return "test";
+    }
 }
