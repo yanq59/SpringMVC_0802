@@ -13,7 +13,7 @@ public class ForwardController {
         System.out.println("删除操作");
 //        删除以后刷新数据 跳转到selectAll
 //        forward:url ==> 请求转发的地址
-//        request.getRequestDispatcher("selectAll").forward(request,respond)
+//       就是:  request.getRequestDispatcher("selectAll").forward(request,respond)
 //        return "forward:selectAll";
 //        响应重定向
         return "redirect:selectAll";
