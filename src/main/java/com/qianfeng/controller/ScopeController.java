@@ -39,7 +39,7 @@ public class ScopeController {
 //    常用:
     @RequestMapping("test3")
 //    Model model ==> 模型 ==> 作用域跟 request相同 ==> 当前的请求 ==> 看做封装好的 request
-    public String test3(Model model){
+    public String test3(Model model ){
         model.addAttribute("msg",Math.random());
         return "scope";
     }
