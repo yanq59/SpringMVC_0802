@@ -16,7 +16,7 @@ import java.util.List;
 
 @Controller
 @RequestMapping("scope")
-// 放在类上面 如果Model中username password 属性 放在session中
+// 放在类上面 如果 Model 中 username password 属性 放在 session 中
 @SessionAttributes(value = {"username","password"})
 public class ScopeController {
 //  ------------------------ request 对象的数据共享  ----------------------------
